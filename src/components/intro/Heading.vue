@@ -22,6 +22,7 @@ export default Vue.extend({
 .heading {
   @include type(30px, 36px);
 
+
   display: block;
   font-weight: 500;
   margin-bottom: 2rem;

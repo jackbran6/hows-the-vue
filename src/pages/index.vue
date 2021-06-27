@@ -11,7 +11,9 @@
       Nuxt starter project. Head to<Code>/src/pages/index.vue</Code> to get
       stuck in.
     </p>
+    <nuxt-link class="about-button" to="/about" >About</nuxt-link>
   </Intro>
+
 </template>
 <script lang="ts">
 import Vue from 'vue'
