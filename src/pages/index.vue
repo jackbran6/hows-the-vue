@@ -1,18 +1,12 @@
 <template>
-  <Intro>
-    <Heading content="hows-the-vue" />
-    <p>
-      Welcome to the
-      <a
-        href="https://formfunfunction.com/"
-        target="_blank"
-        rel="noreferrer"
-      >formfunfunction</a>
-      Nuxt starter project. Head to<Code>/src/pages/index.vue</Code> to get
-      stuck in.
-    </p>
-    <nuxt-link class="about-button" to="/about" >About</nuxt-link>
-  </Intro>
+<div class="container">
+  <div class="image"></div>
+  <div class="secondary-container">
+    <div class="section-one"></div>
+    <div class="section-two"></div>
+    <div class="section-three"></div>
+  </div>
+</div>
 
 </template>
 <script lang="ts">
@@ -34,3 +28,34 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style scoped>
+.container {
+background-color: rgb(247, 188, 197);
+display: flex;
+flex-direction: row;
+height: 100vh;
+margin: auto;
+width: 80vw;
+}
+.image {
+  background-color: rgb(248, 232, 210);
+  flex-grow: 6;
+}
+.secondary-container {
+  flex-direction: column;
+  flex-grow: 3;
+}
+.section-one {
+  background-color: rgb(221, 236, 236);
+  flex-grow: 2;
+}
+.section-two{
+  background-color: rgb(201, 59, 59);
+  flex-grow: 2;
+}
+.section-three {
+  background-color: rgb(223, 179, 122);
+  flex-grow: 1;
+}
+</style>
