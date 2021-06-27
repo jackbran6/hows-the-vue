@@ -11,16 +11,11 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
-import Intro from '@/components/intro/Intro.vue'
-import Code from '@/components/intro/Code.vue'
-import Heading from '@/components/intro/Heading.vue'
 
 export default Vue.extend({
   name: 'Home',
   components: {
-    Intro,
-    Code,
-    Heading
+
   },
 
   head: {
@@ -40,7 +35,8 @@ width: 80vw;
 }
 .image {
   background-color: rgb(248, 232, 210);
-  flex-grow: 6;
+  display: flex;
+  flex-grow: 5;
 }
 .secondary-container {
   flex-direction: column;
@@ -56,6 +52,6 @@ width: 80vw;
 }
 .section-three {
   background-color: rgb(223, 179, 122);
-  flex-grow: 1;
+  flex-grow: 2;
 }
 </style>
