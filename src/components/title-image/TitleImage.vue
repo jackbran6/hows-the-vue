@@ -1,6 +1,6 @@
 <template>
   <div class="dummy-image">
-    <img class="image" src="@/assets/images/prismic-logo.png" alt="sample image">
+
   </div>
 </template>
 
@@ -14,11 +14,10 @@ export default Vue.extend({
 <style scoped>
 .dummy-image{
   background-color: rgb(250, 202, 210);
-  height: 600px;
-  width: 600px
-}
-.image {
-  height: 100%;
   width: 100%;
 }
+.image {
+  width: 100%
+}
+
 </style>
