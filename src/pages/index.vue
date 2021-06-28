@@ -1,10 +1,11 @@
 <template>
 <div class="container">
-  <div class="image"></div>
+  <div class="image">
+    <TitleImage/>
+  </div>
   <div class="secondary-container">
-    <div class="section-one"></div>
-    <div class="section-two"></div>
-    <div class="section-three"></div>
+    <ContactBox title="Contact Us" weekdays="12pm-11pm" weekend="3pm-11pm" contact="free call 0800 9428787"/>
+    <ContactBox title="Chat Online" weekdays="12pm-10pm" weekend="3pm-10pm" contact="whatsup.co.nz/chat"/>
   </div>
 </div>
 
@@ -12,10 +13,14 @@
 <script lang="ts">
 import Vue from 'vue'
 
+import TitleImage from '@/components/title-image/TitleImage.vue'
+import ContactBox from '@/components/contact-boxes/ContactUs.vue'
+
 export default Vue.extend({
   name: 'Home',
   components: {
-
+    TitleImage,
+    ContactBox
   },
 
   head: {
@@ -26,7 +31,6 @@ export default Vue.extend({
 
 <style scoped>
 .container {
-background-color: rgb(247, 188, 197);
 display: flex;
 flex-direction: row;
 height: 100vh;
@@ -34,7 +38,6 @@ margin: auto;
 width: 80vw;
 }
 .image {
-  background-color: rgb(248, 232, 210);
   display: flex;
   flex-grow: 5;
 }
