@@ -1,10 +1,10 @@
 <template>
   <div class="container">
+    <MenuButton class="hamburger" />
     <div class="image">
       <TitleImage />
     </div>
     <div class="secondary-container">
-      <MenuButton class="hamburger" />
       <ContactBox
         route="contact-us"
         title="Contact us"
@@ -51,12 +51,13 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: 3fr 2fr;
   margin: auto;
+  width: 80vw;
 }
 
 .hamburger {
+  justify-self: flex-end;
   padding-right: 20px;
   padding-top: 40px;
   position: absolute;
-  right: 0;
 }
 </style>
