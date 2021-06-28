@@ -1,10 +1,8 @@
 <template>
   <div class="content-container">
-    <h3 class="title">Talk to us about anything - it's free</h3>
+    <h3 class="title">{{ title }}</h3>
     <p class="content">
-      We're trained counsellors and are happy to help you with whatever you
-      need. We can listen or give adivce. We're here for everything that's on
-      your mind no matter how big or small.
+      {{ content }}
     </p>
   </div>
 </template>
@@ -12,7 +10,17 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'ImageContent'
+  name: 'ImageContent',
+  props: {
+    title: {
+      type: String,
+      default: 'Default title'
+    },
+    content: {
+      type: String,
+      default: 'This is default content'
+    }
+  }
 })
 </script>
 

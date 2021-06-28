@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="container">
     <div class="first-container">
       <MenuButton class="hamburger" />
       <div class="image">
@@ -26,11 +26,30 @@
     </div>
     <div class="second-container">
       <div class="secondary-container">
-        <LinkBox route="contact-us" />
-        <TextBox />
+        <LinkBox
+          route="contact-us"
+          title="All our conversations are fully confidential"
+          content="So don't worry you can talk to us about anything, we won't judge you and you won't get in trouble"
+          route-title="Read more"
+        />
+        <TextBox
+          content="We're here for all children and teenagers in Aotearoa."
+        />
       </div>
 
-      <ImageContent />
+      <ImageContent
+        title="Talk to us about anything - it's free"
+        content=" We're trained counsellors and are happy to help you with whatever you
+      need. We can listen or give adivce. We're here for everything that's on
+      your mind no matter how big or small."
+      />
+    </div>
+    <div class="third-container">
+      <TextBoxContent
+        title="You can ask to speak with a man or woman counsellor"
+        content="If you have spoken with a counselor before you can even ask to speak to the same person if you want to!"
+        row="true"
+      />
     </div>
   </div>
 </template>
@@ -44,6 +63,7 @@ import ContactBox from '@/components/contact-boxes/ContactBox.vue'
 import LinkBox from '@/components/link-box/LinkBox.vue'
 import ImageContent from '@/components/image-content/ImageContent.vue'
 import TextBox from '@/components/text-box/TextBox.vue'
+import TextBoxContent from '~/components/text-box/TextBoxContent.vue'
 
 export default Vue.extend({
   name: 'Home',
@@ -54,21 +74,20 @@ export default Vue.extend({
     MenuButton,
     LinkBox,
     ImageContent,
-    TextBox
-  },
-
-  head: {
-    title: 'Hello world!'
+    TextBox,
+    TextBoxContent
   }
 })
 </script>
 
 <style scoped>
+.container {
+  margin: auto;
+  width: 80vw;
+}
 .first-container {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  margin: auto;
-  width: 80vw;
 }
 
 .second-container {

@@ -1,33 +1,28 @@
 <template>
-  <div class="content-container">
-    <h3 class="title">{{ title }}</h3>
-    <p class="content">
-      {{ content }}
-    </p>
-    <nuxt-link :to="route">{{ routeTitle }}</nuxt-link>
+  <div class="content-container" :class="{ secondary: row }">
+    <h3 class="title">
+      {{ title }}
+    </h3>
+    <p class="content">{{ content }}</p>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'LinkBox',
+  name: 'TextBoxContent',
   props: {
-    route: {
-      type: String,
-      default: ''
-    },
-    title: {
+    content: {
       type: String,
       default: 'Default title'
     },
-    content: {
+    title: {
       type: String,
       default: 'This is default content'
     },
-    routeTitle: {
-      type: String,
-      default: 'Default route title'
+    row: {
+      type: Boolean,
+      default: false
     }
   }
 })
@@ -38,5 +33,9 @@ export default Vue.extend({
   background: #ffe8b3;
   justify-content: center;
   padding: 100px 50px;
+}
+.secondary {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
 }
 </style>
