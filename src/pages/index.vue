@@ -18,6 +18,7 @@
         weekdays="12pm-10pm"
         weekend="3pm-10pm"
         contact="whatsup.co.nz/chat"
+        :check="true"
       />
       <EngageMenu />
     </div>

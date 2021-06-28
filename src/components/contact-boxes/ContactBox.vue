@@ -1,10 +1,10 @@
 <template>
-<div class="card">
-  <nuxt-link :to="route" class="title">{{title}}</nuxt-link>
-  <p class="contact">{{contact}}</p>
-  <p class="weekday-hours">Mon-Fri {{weekdays}}</p>
-  <p class="weekend-hours">Sat/Sun {{weekend}}</p>
-</div>
+  <div class="card" :class="{ secondary: check }">
+    <nuxt-link :to="route" class="title">{{ title }}</nuxt-link>
+    <p class="contact">{{ contact }}</p>
+    <p class="weekday-hours">Mon-Fri {{ weekdays }}</p>
+    <p class="weekend-hours">Sat/Sun {{ weekend }}</p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -19,34 +19,40 @@ export default Vue.extend({
     title: {
       type: String,
       default: 'Contact'
-      },
-      contact: {
+    },
+    contact: {
       type: String,
       default: 'whatsup.co.nz'
-      },
-      weekdays: {
+    },
+    weekdays: {
       type: String,
       default: '12pm-3pm'
-      },
-      weekend: {
+    },
+    weekend: {
       type: String,
       default: '12pm-3pm'
-      },
-
+    },
+    check: {
+      type: Boolean,
+      default: false
+    }
   }
 })
 </script>
 
 <style scoped>
 .card {
-  background-color: #c5e8e8;
+  background: #c5e8e8;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 100px 50px;
 }
 .title {
   font-size: 30px;
   text-decoration: none;
+}
 
+.secondary {
+  background: #adbaea;
 }
 </style>
