@@ -32,16 +32,16 @@ export default Vue.extend({
       type: String,
       default: '12pm-3pm'
       },
+
   }
 })
 </script>
 
 <style scoped>
 .card {
-  background-color: rgb(210, 255, 192);
+  background-color: #c5e8e8;
   display: flex;
   flex-direction: column;
-  padding: 30px
-
+  padding: 30px;
 }
 </style>

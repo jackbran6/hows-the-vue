@@ -16,6 +16,7 @@ export default Vue.extend({
   .card {
     align-items: center;
     align-self: center;
+    background-color: #fab6a6;
     display: flex;
     flex-direction: row;
     justify-content: center;

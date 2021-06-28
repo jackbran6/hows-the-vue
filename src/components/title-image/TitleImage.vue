@@ -13,11 +13,8 @@ export default Vue.extend({
 
 <style scoped>
 .dummy-image{
-  background-color: rgb(250, 202, 210);
-  width: 100%;
+  background-color: #dfe6ed;
 }
-.image {
-  width: 100%
-}
+
 
 </style>
