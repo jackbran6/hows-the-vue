@@ -1,6 +1,6 @@
 <template>
 <div class="card">
-  <h3>{{title}}</h3>
+  <nuxt-link :to="route">{{title}}</nuxt-link>
   <h4 class="contact">{{contact}}</h4>
   <p class="weekday-hours">Mon-Fri {{weekdays}}</p>
   <p class="weekend-hours">Sat/Sun {{weekend}}</p>
@@ -12,6 +12,10 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'ContactBox',
   props: {
+    route: {
+      type: String,
+      default: ''
+    },
     title: {
       type: String,
       default: 'Contact'

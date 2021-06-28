@@ -4,8 +4,8 @@
     <TitleImage/>
   </div>
   <div class="secondary-container">
-    <ContactBox title="Contact Us" weekdays="12pm-11pm" weekend="3pm-11pm" contact="free call 0800 9428787"/>
-    <ContactBox title="Chat Online" weekdays="12pm-10pm" weekend="3pm-10pm" contact="whatsup.co.nz/chat"/>
+    <ContactBox route="contact-us" title="Contact us" weekdays="12pm-11pm" weekend="3pm-11pm" contact="free call 0800 9428787"/>
+    <ContactBox route="chat" title="Chat online" weekdays="12pm-10pm" weekend="3pm-10pm" contact="whatsup.co.nz/chat"/>
   </div>
 </div>
 
@@ -14,7 +14,7 @@
 import Vue from 'vue'
 
 import TitleImage from '@/components/title-image/TitleImage.vue'
-import ContactBox from '@/components/contact-boxes/ContactUs.vue'
+import ContactBox from '~/components/contact-boxes/ContactBox.vue'
 
 export default Vue.extend({
   name: 'Home',
@@ -44,17 +44,5 @@ width: 80vw;
 .secondary-container {
   flex-direction: column;
   flex-grow: 3;
-}
-.section-one {
-  background-color: rgb(221, 236, 236);
-  flex-grow: 2;
-}
-.section-two{
-  background-color: rgb(201, 59, 59);
-  flex-grow: 2;
-}
-.section-three {
-  background-color: rgb(223, 179, 122);
-  flex-grow: 2;
 }
 </style>
