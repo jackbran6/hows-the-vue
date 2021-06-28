@@ -1,6 +1,6 @@
 <template>
 <div class="card">
-  <nuxt-link :to="route">{{title}}</nuxt-link>
+  <nuxt-link :to="route" class="title">{{title}}</nuxt-link>
   <p class="contact">{{contact}}</p>
   <p class="weekday-hours">Mon-Fri {{weekdays}}</p>
   <p class="weekend-hours">Sat/Sun {{weekend}}</p>
@@ -42,6 +42,11 @@ export default Vue.extend({
   background-color: #c5e8e8;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 50px;
+}
+.title {
+  font-size: 30px;
+  text-decoration: none;
+
 }
 </style>

@@ -37,7 +37,7 @@ export default Vue.extend({
 display: grid;
 grid-template-columns: 3fr 2fr;
 margin: auto;
-width: 80vw;
+
 }
 
 

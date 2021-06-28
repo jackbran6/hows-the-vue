@@ -14,6 +14,9 @@ export default Vue.extend({
 <style scoped>
 .dummy-image{
   background-color: #dfe6ed;
+  height: 100%;
+  width: 100%;
+
 }
 
 

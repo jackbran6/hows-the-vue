@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <h3 class="button">+</h3>
-    <h4 class="title">More ways to engage</h4>
+    <h4 class="title">More ways you can engage</h4>
   </div>
 </template>
 
@@ -15,8 +15,7 @@ export default Vue.extend({
 <style scoped>
   .card {
     align-items: center;
-    align-self: center;
-    background-color: #fab6a6;
+    background-color: #ed8b00;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,6 +24,5 @@ export default Vue.extend({
   .button {
     font-size: 40px;
     padding-right: 10px;
-
   }
 </style>
