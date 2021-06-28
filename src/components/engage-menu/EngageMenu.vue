@@ -13,16 +13,18 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-  .card {
-    align-items: center;
-    background-color: #ed8b00;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  .button {
-    font-size: 40px;
-    padding-right: 10px;
-  }
+.card {
+  background-color: #ed8b00;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.button {
+  font-size: 40px;
+  padding-right: 10px;
+}
+.title {
+  align-self: center;
+}
 </style>
