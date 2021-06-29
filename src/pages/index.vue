@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div class="first-container">
-      <MenuButton class="hamburger" />
       <div class="image">
         <TitleImage />
       </div>
@@ -141,13 +140,6 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
-}
-
-.hamburger {
-  justify-self: flex-end;
-  padding-right: 20px;
-  padding-top: 40px;
-  position: absolute;
 }
 .secondary-container {
   height: 100%;
