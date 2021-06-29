@@ -51,6 +51,20 @@
         row="true"
       />
     </div>
+    <div class="fourth-container">
+      <div class="resources">
+        <Title
+          title="Resources"
+          content="If you don't feel like talking right now, find helpful tips below."
+        />
+        <div class="resource-links">
+          <ResourceLink title="Kids" tereo="Tamariki" />
+          <ResourceLink title="Family" tereo="Rangatahi" />
+          <ResourceLink title="Family" tereo="Whānau" />
+        </div>
+      </div>
+      <div class="follow-us"></div>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -63,7 +77,9 @@ import ContactBox from '@/components/contact-boxes/ContactBox.vue'
 import LinkBox from '@/components/link-box/LinkBox.vue'
 import ImageContent from '@/components/image-content/ImageContent.vue'
 import TextBox from '@/components/text-box/TextBox.vue'
-import TextBoxContent from '~/components/text-box/TextBoxContent.vue'
+import Title from '@/components/title/Title.vue'
+import ResourceLink from '@/components/resource-links/ResourceLink.vue'
+import TextBoxContent from '~/components/text-box/TextBoxHorizontal.vue'
 
 export default Vue.extend({
   name: 'Home',
@@ -75,7 +91,9 @@ export default Vue.extend({
     LinkBox,
     ImageContent,
     TextBox,
-    TextBoxContent
+    TextBoxContent,
+    Title,
+    ResourceLink
   }
 })
 </script>
@@ -94,7 +112,6 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: 2fr 3fr;
   margin: auto;
-  width: 80vw;
 }
 
 .hamburger {
@@ -105,5 +122,15 @@ export default Vue.extend({
 }
 .secondary-container {
   height: 100%;
+}
+.resource-links {
+  column-gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+.resources {
+  background: #fff;
+  padding: 50px;
 }
 </style>

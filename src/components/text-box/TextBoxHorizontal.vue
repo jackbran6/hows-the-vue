@@ -1,9 +1,13 @@
 <template>
   <div class="content-container" :class="{ secondary: row }">
-    <h3 class="title">
-      {{ title }}
-    </h3>
-    <p class="content">{{ content }}</p>
+    <div class="padding">
+      <h3 class="title">
+        {{ title }}
+      </h3>
+    </div>
+    <div class="padding">
+      <p class="content">{{ content }}</p>
+    </div>
   </div>
 </template>
 
@@ -32,10 +36,12 @@ export default Vue.extend({
 .content-container {
   background: #ffe8b3;
   justify-content: center;
-  padding: 100px 50px;
 }
 .secondary {
   display: grid;
   grid-template-columns: 2fr 3fr;
+}
+.padding {
+  padding: 100px 50px;
 }
 </style>
