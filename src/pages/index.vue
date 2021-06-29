@@ -85,7 +85,6 @@ import Vue from 'vue'
 
 import TitleImage from '@/components/title-image/TitleImage.vue'
 import EngageMenu from '@/components/engage-menu/EngageMenu.vue'
-import MenuButton from '@/components/menu-button/MenuButton.vue'
 import ContactBox from '@/components/contact-boxes/ContactBox.vue'
 import LinkBox from '@/components/link-box/LinkBox.vue'
 import ImageContent from '@/components/image-content/ImageContent.vue'
@@ -106,7 +105,6 @@ export default Vue.extend({
     TitleImage,
     ContactBox,
     EngageMenu,
-    MenuButton,
     LinkBox,
     ImageContent,
     TextBox,
@@ -140,6 +138,13 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
+}
+
+.hamburger {
+  justify-self: flex-end;
+  padding-right: 20px;
+  padding-top: 40px;
+  position: absolute;
 }
 .secondary-container {
   height: 100%;

@@ -37,7 +37,7 @@ export default Vue.extend({
 }
 .subtitle-text {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 </style>
