@@ -6,17 +6,19 @@
     </h3>
     <div class="donate-container">
       <p class="donate-statement">Help us continue with our work</p>
-      <button class="button">
-        <p class="donate-text">Donate</p>
-      </button>
+      <Button title="Donate" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import Button from '@/components/button/Button.vue'
 export default Vue.extend({
-  name: 'Barnardos'
+  name: 'Barnardos',
+  components: {
+    Button
+  }
 })
 </script>
 

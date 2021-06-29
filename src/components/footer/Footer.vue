@@ -12,8 +12,31 @@
         <li class="menu-item">Our Toolkit</li>
       </ul>
     </div>
+    <div class="footer">
+      <div class="barnardos">
+        <p class="barnardos-text">
+          0800 What's Up is part of the Barnardos whānau
+        </p>
+        <p class="charities-text">
+          Charities Commision Number: CC21844 - Registration details on the
+          Charities Commission website
+        </p>
+      </div>
+      <Button title="Donate" subtitle="On barnardos.co.nz" />
+    </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import Button from '@/components/button/Button.vue'
+export default Vue.extend({
+  name: 'Footer',
+  components: {
+    Button
+  }
+})
+</script>
 
 <style lang="scss" scoped>
 .container {
@@ -38,6 +61,24 @@
   flex-direction: row;
 }
 .menu-item {
+  color: #045a55;
+  font-weight: 600;
   padding-right: 60px;
+  padding-top: 50px;
+}
+.footer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 300px;
+}
+.barnardos-text {
+  color: #045a55;
+  font-weight: 600;
+}
+.charities-text {
+  color: #045a55;
+  font-weight: 600;
 }
 </style>
