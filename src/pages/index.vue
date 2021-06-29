@@ -71,7 +71,9 @@
         </div>
         <FollowLinks />
       </div>
-      <div class="follow-us"></div>
+    </div>
+    <div class="fifth-container">
+      <Barnardos />
     </div>
   </div>
 </template>
@@ -89,6 +91,7 @@ import Title from '@/components/title/Title.vue'
 import ResourceLink from '@/components/resource-links/ResourceLink.vue'
 import TitleWithContent from '@/components/title/TitleWithContent.vue'
 import FollowLinks from '@/components/follow-links/FollowLinks.vue'
+import Barnardos from '@/components/barnardos/Barnardos.vue'
 import TextBoxContent from '~/components/text-box/TextBoxHorizontal.vue'
 
 export default Vue.extend({
@@ -105,7 +108,8 @@ export default Vue.extend({
     Title,
     ResourceLink,
     TitleWithContent,
-    FollowLinks
+    FollowLinks,
+    Barnardos
   }
 })
 </script>

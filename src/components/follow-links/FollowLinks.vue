@@ -1,9 +1,9 @@
 <template>
   <div class="content-container">
-    <a class="facebook">
+    <a href="https://www.facebook.com/0800Whatsup/" class="facebook">
       <p>Facebook</p>
     </a>
-    <a class="instagram">
+    <a href="https://www.instagram.com/0800whatsup/?hl=en" class="instagram">
       <p>Instagram</p>
     </a>
   </div>
