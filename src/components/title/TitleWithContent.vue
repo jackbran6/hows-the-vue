@@ -3,6 +3,9 @@
     <h3 class="title">
       {{ title }}
     </h3>
+    <p class="content">
+      {{ content }}
+    </p>
   </div>
 </template>
 
@@ -14,6 +17,10 @@ export default Vue.extend({
     title: {
       type: String,
       default: 'Default title'
+    },
+    content: {
+      type: String,
+      default: 'This is default content'
     }
   }
 })

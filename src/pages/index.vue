@@ -53,7 +53,7 @@
     </div>
     <div class="fourth-container">
       <div class="resources">
-        <Title
+        <TitleWithContent
           title="Resources"
           content="If you don't feel like talking right now, find helpful tips below."
         />
@@ -62,6 +62,14 @@
           <ResourceLink title="Family" tereo="Rangatahi" />
           <ResourceLink title="Family" tereo="Whānau" />
         </div>
+        <Title title="Follow us" class="follow-title" />
+        <div class="follow-content">
+          <FollowContent />
+          <FollowContent />
+          <FollowContent />
+          <FollowContent />
+        </div>
+        <FollowLinks />
       </div>
       <div class="follow-us"></div>
     </div>
@@ -79,6 +87,8 @@ import ImageContent from '@/components/image-content/ImageContent.vue'
 import TextBox from '@/components/text-box/TextBox.vue'
 import Title from '@/components/title/Title.vue'
 import ResourceLink from '@/components/resource-links/ResourceLink.vue'
+import TitleWithContent from '@/components/title/TitleWithContent.vue'
+import FollowLinks from '@/components/follow-links/FollowLinks.vue'
 import TextBoxContent from '~/components/text-box/TextBoxHorizontal.vue'
 
 export default Vue.extend({
@@ -93,7 +103,9 @@ export default Vue.extend({
     TextBox,
     TextBoxContent,
     Title,
-    ResourceLink
+    ResourceLink,
+    TitleWithContent,
+    FollowLinks
   }
 })
 </script>
@@ -128,6 +140,15 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
+}
+.follow-content {
+  column-gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+.follow-title {
+  padding-top: 50px;
 }
 .resources {
   background: #fff;
