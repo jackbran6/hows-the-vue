@@ -19,7 +19,7 @@
           weekdays="12pm-10pm"
           weekend="3pm-10pm"
           contact="whatsup.co.nz/chat"
-          :check="true"
+          check
         />
         <EngageMenu />
       </div>
@@ -75,6 +75,10 @@
     <div class="fifth-container">
       <Barnardos />
     </div>
+    <div class="sixth-container">
+      <Partners />
+      <Promote />
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -92,6 +96,9 @@ import ResourceLink from '@/components/resource-links/ResourceLink.vue'
 import TitleWithContent from '@/components/title/TitleWithContent.vue'
 import FollowLinks from '@/components/follow-links/FollowLinks.vue'
 import Barnardos from '@/components/barnardos/Barnardos.vue'
+import Partners from '@/components/partners/Partners.vue'
+import Promote from '@/components/promote/Promote.vue'
+
 import TextBoxContent from '~/components/text-box/TextBoxHorizontal.vue'
 
 export default Vue.extend({
@@ -109,7 +116,9 @@ export default Vue.extend({
     ResourceLink,
     TitleWithContent,
     FollowLinks,
-    Barnardos
+    Barnardos,
+    Partners,
+    Promote
   }
 })
 </script>
@@ -117,7 +126,6 @@ export default Vue.extend({
 <style scoped>
 .container {
   margin: auto;
-  width: 80vw;
 }
 .first-container {
   display: grid;
@@ -127,6 +135,11 @@ export default Vue.extend({
 .second-container {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  margin: auto;
+}
+.sixth-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: auto;
 }
 

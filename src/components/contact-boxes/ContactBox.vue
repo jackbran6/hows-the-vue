@@ -51,7 +51,6 @@ export default Vue.extend({
   font-size: 30px;
   text-decoration: none;
 }
-
 .secondary {
   background: #adbaea;
 }
