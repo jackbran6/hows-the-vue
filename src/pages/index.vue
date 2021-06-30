@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <HomePageTop />
     <div class="second-container">
       <div class="secondary-container">
         <LinkBox

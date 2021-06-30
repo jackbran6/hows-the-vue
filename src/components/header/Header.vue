@@ -6,7 +6,7 @@
 import Vue from 'vue'
 import MenuButton from '@/components/menu-button/MenuButton.vue'
 export default Vue.extend({
-  name: 'MenuButton',
+  name: 'Header',
   components: {
     MenuButton
   }
