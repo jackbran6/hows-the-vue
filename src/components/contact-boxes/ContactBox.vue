@@ -1,9 +1,21 @@
 <template>
   <div class="card" :class="{ secondary: check }">
-    <nuxt-link :to="route" class="title">{{ title }}</nuxt-link>
-    <p class="contact">{{ contact }}</p>
-    <p class="weekday-hours">Mon-Fri {{ weekdays }}</p>
-    <p class="weekend-hours">Sat/Sun {{ weekend }}</p>
+    <div v-if="!closed" class="open-section">
+      <nuxt-link :to="route" class="title">{{ title }}</nuxt-link>
+      <p class="contact">{{ contact }}</p>
+      <p class="weekday-hours">Mon-Fri {{ weekdays }}</p>
+      <p class="weekend-hours">Sat/Sun {{ weekend }}</p>
+    </div>
+    <div v-else class="closed">
+      <nuxt-link :to="route" class="title">{{ title }}</nuxt-link>
+      <p class="contact">{{ contact }}</p>
+      <p class="weekday-hours">Mon-Fri {{ weekdays }}</p>
+      <p class="weekend-hours">Sat/Sun {{ weekend }}</p>
+      <nuxt-link :to="route" class="title">{{ title }}</nuxt-link>
+      <p class="contact">{{ contact }}</p>
+      <p class="weekday-hours">Mon-Fri {{ weekdays }}</p>
+      <p class="weekend-hours">Sat/Sun {{ weekend }}</p>
+    </div>
   </div>
 </template>
 
@@ -33,6 +45,10 @@ export default Vue.extend({
       default: '12pm-3pm'
     },
     check: {
+      type: Boolean,
+      default: false
+    },
+    closed: {
       type: Boolean,
       default: false
     }

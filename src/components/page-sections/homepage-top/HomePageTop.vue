@@ -10,6 +10,8 @@
         weekdays="12pm-11pm"
         weekend="3pm-11pm"
         contact="free call 0800 9428787"
+        :closed="showDropDown"
+        :check="false"
       />
       <ContactBox
         route="chat"
@@ -17,9 +19,11 @@
         weekdays="12pm-10pm"
         weekend="3pm-10pm"
         contact="whatsup.co.nz/chat"
+        :closed="showDropDown"
         check
       />
-      <EngageMenu />
+
+      <EngageMenu @toggle-dropdown="toggleDropDown" />
     </div>
   </div>
 </template>
@@ -37,6 +41,17 @@ export default Vue.extend({
     ContactBox,
     TitleImage,
     EngageMenu
+  },
+  data() {
+    return {
+      showDropDown: false
+    }
+  },
+  methods: {
+    toggleDropDown() {
+      this.showDropDown = !this.showDropDown
+      console.log(this.showDropDown)
+    }
   }
 })
 </script>
