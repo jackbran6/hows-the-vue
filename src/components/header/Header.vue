@@ -1,5 +1,7 @@
 <template>
-  <div class="header"><MenuButton class="hamburger" /></div>
+  <div class="header">
+    <MenuButton class="hamburger" />
+  </div>
 </template>
 
 <script lang="ts">
