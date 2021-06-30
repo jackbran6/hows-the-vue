@@ -1,28 +1,5 @@
 <template>
   <div class="container">
-    <div class="first-container">
-      <div class="image">
-        <TitleImage />
-      </div>
-      <div class="secondary-container">
-        <ContactBox
-          route="contact-us"
-          title="Contact us"
-          weekdays="12pm-11pm"
-          weekend="3pm-11pm"
-          contact="free call 0800 9428787"
-        />
-        <ContactBox
-          route="chat"
-          title="Chat online"
-          weekdays="12pm-10pm"
-          weekend="3pm-10pm"
-          contact="whatsup.co.nz/chat"
-          check
-        />
-        <EngageMenu />
-      </div>
-    </div>
     <div class="second-container">
       <div class="secondary-container">
         <LinkBox
@@ -47,7 +24,7 @@
       <TextBoxContent
         title="You can ask to speak with a man or woman counsellor"
         content="If you have spoken with a counselor before you can even ask to speak to the same person if you want to!"
-        row="true"
+        row
       />
     </div>
     <div class="fourth-container">
@@ -83,9 +60,6 @@
 <script lang="ts">
 import Vue from 'vue'
 
-import TitleImage from '@/components/title-image/TitleImage.vue'
-import EngageMenu from '@/components/engage-menu/EngageMenu.vue'
-import ContactBox from '@/components/contact-boxes/ContactBox.vue'
 import LinkBox from '@/components/link-box/LinkBox.vue'
 import ImageContent from '@/components/image-content/ImageContent.vue'
 import TextBox from '@/components/text-box/TextBox.vue'
@@ -98,13 +72,11 @@ import Partners from '@/components/partners/Partners.vue'
 import Promote from '@/components/promote/Promote.vue'
 
 import TextBoxContent from '~/components/text-box/TextBoxHorizontal.vue'
+import HomePageTop from '~/components/page-sections/homepage-top/HomePageTop.vue'
 
 export default Vue.extend({
   name: 'Home',
   components: {
-    TitleImage,
-    ContactBox,
-    EngageMenu,
     LinkBox,
     ImageContent,
     TextBox,
@@ -115,7 +87,8 @@ export default Vue.extend({
     FollowLinks,
     Barnardos,
     Partners,
-    Promote
+    Promote,
+    HomePageTop
   }
 })
 </script>
